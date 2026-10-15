@@ -1,0 +1,75 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f0f2f5;
+  color: #222;
+  padding: 24px 12px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 { text-align: center; margin-bottom: 20px; color: #2c3e91; }
+h2 { margin: 32px 0 12px; color: #2c3e91; font-size: 1.2rem; }
+
+.field { margin-bottom: 16px; flex: 1; }
+.row { display: flex; gap: 16px; }
+
+label { display: block; font-weight: 600; margin-bottom: 6px; font-size: 0.9rem; }
+
+input[type="text"], input[type="email"], input[type="tel"],
+input[type="date"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2c3e91;
+}
+
+.radio-group { display: flex; gap: 18px; }
+.radio-group label { font-weight: 400; display: flex; align-items: center; gap: 6px; }
+
+.field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #d93025; }
+.error { color: #d93025; font-size: 0.8rem; display: block; min-height: 1em; margin-top: 4px; }
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #2c3e91;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button[type="submit"]:hover { background: #22307a; }
+
+#message { text-align: center; margin-top: 12px; font-weight: 600; }
+#message.success { color: #188038; }
+#message.fail { color: #d93025; }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { padding: 8px; border-bottom: 1px solid #e3e3e3; text-align: left; }
+th { background: #f5f6fa; }
+
+.del-btn {
+  background: #d93025; color: #fff; border: none;
+  padding: 4px 10px; border-radius: 4px; cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .row { flex-direction: column; gap: 0; }
+}

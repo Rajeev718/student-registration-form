@@ -1,0 +1,12 @@
+{
+  "name": "student-registration",
+  "version": "1.0.0",
+  "description": "Student Registration Form - HTML, CSS, JS, Node.js, Express.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
